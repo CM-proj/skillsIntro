@@ -1,0 +1,86 @@
+1. Repository (Repo)
+A repository is a storage space where your project’s files are kept. It contains all of your project’s files, including code, documentation, configuration files, and its entire version history.
+A repo can be local (on your computer) or remote (hosted on a platform like GitHub).
+
+2. Commit
+A commit is a snapshot of changes made to files in your repository. It includes a unique identifier (a hash), the changes made, the author’s information, and a commit message describing the changes.
+Think of a commit as a checkpoint in your project's history.
+
+3. Push
+Push refers to the action of uploading your local commits (changes) to a remote repository, such as GitHub.
+The command used: git push
+Pushing allows others to access and view the updates you've made to the project.
+
+4. Pull
+Pull is the process of downloading changes from a remote repository to your local repository. It’s a combination of fetching updates and automatically merging them into your working directory.
+The command used: git pull
+Pulling ensures your local copy is up-to-date with the latest changes from others.
+
+5. Clone
+Clone refers to creating a copy of a remote repository on your local machine. When you clone a repo, you get a complete copy of all the project files and history.
+The command used: git clone <repository-url>
+Cloning is usually the first step to start working on a project that’s hosted on GitHub or another Git service.
+
+6. Branch
+A branch is a separate line of development in a project. It allows you to make changes in isolation from the main project until you're ready to merge them back.
+By default, a repository has a main or master branch, but you can create new branches for features, fixes, or experiments.
+The command used to create a branch: git branch <branch-name>
+
+7. Merge
+Merge is the process of combining the changes from one branch into another, typically from a feature branch back into the main branch.
+The command used: git merge <branch-name>
+Merging ensures that the changes made in separate branches become part of the same project.
+
+8. Pull Request (PR)
+A Pull Request is a request to merge changes from one branch into another (usually from a feature branch into the main branch).
+In GitHub, pull requests are used for code review and collaboration before merging changes into the main codebase.
+Pull requests can also be used in a collaborative open-source project to contribute code.
+
+9. Fork
+A fork is a personal copy of someone else's repository. Forking a repo creates a copy under your own GitHub account, allowing you to make changes without affecting the original project.
+It’s typically used in open-source projects to propose changes or work independently before submitting pull requests.
+
+10. Staging Area (Index)
+The staging area (or index) is where changes are placed before committing them to the repository. When you modify files, they’re first staged (prepared) before they’re officially committed to the repository.
+The command used to add changes to the staging area: git add <file-name> or git add . (to add all changes).
+
+11. Repository URL
+The repository URL is the web address (link) where the repository is hosted, whether it's on GitHub, GitLab, or another Git hosting service.
+Example URL: https://github.com/username/repo-name.git
+
+12. Remote
+A remote is a version of the repository that’s hosted on a server or cloud (like GitHub). When you interact with a remote, you're pushing and pulling changes to/from a location that's not on your local machine.
+The command used to list remotes: git remote -v
+You can add a remote to your local repo using: git remote add origin <repository-url>
+
+13. Origin
+Origin is the default name given to the remote repository when you clone a repository or add a remote. It typically points to the original repository.
+Example: git push origin main would push your changes to the "main" branch of the origin remote.
+
+14. HEAD
+HEAD refers to the current commit or branch you’re working on. It’s like a pointer to the latest commit in the current branch.
+You can use git checkout <branch-name> to switch HEAD to a different branch.
+
+15. Tag
+A tag is a reference to a specific commit in the repository. Tags are often used for marking release points (like version 1.0.0).
+The command used to create a tag: git tag <tag-name>
+
+16. Checkout
+Checkout is used to switch between branches or restore files in your working directory to match a specific commit or branch.
+The command used: git checkout <branch-name> or git checkout <commit-hash>
+
+17. Conflict
+A conflict occurs when two branches contain changes to the same part of a file, and Git can't automatically merge them. You'll have to manually resolve the conflict.
+Git marks the conflict areas in the file, and after fixing it, you need to stage and commit the resolution.
+
+18. Diff
+A diff is a comparison of changes between two versions of a file or set of files. It shows what has been added, removed, or modified.
+The command used: git diff
+
+19. Pulling vs Fetching
+Fetching downloads the latest changes from a remote repository but does not automatically merge them into your working branch. You’ll need to merge manually.
+Pulling is a combination of fetching and merging in one step. It updates your branch with the latest changes from the remote and automatically merges them.
+
+20. Revert
+Revert is the process of undoing a commit by creating a new commit that undoes the changes from a previous commit.
+The command used: git revert <commit-hash>
